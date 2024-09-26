@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUlti Question Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="new.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div id="firstToast" class="toast show mx-auto pt-3 mt-4">
+      <div class="toast-body">
+        <h4>Question 1</h4>
+        <h6>Q) What is your aim behind investing money?</h6>
+        <input value="4" type="radio" name="highestNumber" id="q11" />
+        <label for="q11">You want to accumulate wealth</label><br />
+        <input value="3" type="radio" name="highestNumber" id="q12" />
+        <label for="q12">You want to buy a house</label><br />
+        <input value="2" type="radio" name="highestNumber" id="q13" />
+        <label for="q13">You want to do your retirement planning</label><br />
+        <input value="1" type="radio" name="highestNumber" id="q14" />
+        <label for="q14"
+          >You want to provide for your child's education or marriage</label
+        ><br />
+        <button type="button" class="btn btn-success text-white mt-3 next">
+          Next
+        </button>
+      </div>
+    </div>
+
+    <div id="secondToast" class="toast mx-auto pt-3 mt-4">
+      <div class="toast-body">
+        <h4>Question 2</h4>
+        <h6>Q) When will you withdraw the invested money in the future?</h6>
+        <input value="4" type="radio" name="fieldMarshal" id="q21" />
+        <label for="q21">After 10 years</label><br />
+        <input id="q22" value="3" type="radio" name="fieldMarshal" />
+        <label for="q22">In 5-10 years</label><br />
+        <input id="q23" value="2" type="radio" name="fieldMarshal" />
+        <label for="q23">In 2-5 years</label><br />
+        <input id="q24" value="1" type="radio" name="fieldMarshal" />
+        <label for="q24">Within 2 years</label><br />
+        <!-- <button type="button" class="btn btn-success text-white mt-3 prev">Previous</button> -->
+        <button type="button" class="btn btn-success text-white mt-3 next">
+          Next
+        </button>
+      </div>
+    </div>
+
+    <div id="thirdToast" class="toast mx-auto pt-3 mt-4">
+      <div class="toast-body">
+        <h4>Question 3</h4>
+        <h6>Q) Are you the only breadwinner of your family?</h6>
+        <input value="4" type="radio" name="pmTenure" id="q31" />
+        <label for="q31">No</label><br />
+        <input value="3" type="radio" name="pmTenure" id="q32" />
+        <label for="q32">Yes, with one dependent</label><br />
+        <input value="2" type="radio" name="pmTenure" id="q33" />
+        <label for="q33">I have two to four dependents</label><br />
+        <input value="1" type="radio" name="pmTenure" id="q34" />
+        <label for="q34">I have more than four dependents</label><br />
+        <!-- <button type="button" class="btn btn-success text-white mt-3 prev">Previous</button> -->
+        <button type="button" class="btn btn-success text-white mt-3 next">
+          Next
+        </button>
+      </div>
+    </div>
+
+    <div id="fourthToast" class="toast mx-auto pt-3 mt-4">
+      <div class="toast-body">
+        <h4>Question 4</h4>
+        <h6>Q) Do you have any financial obligations like loan repayment?</h6>
+        <input value="4" type="radio" name="worstAddiction" id="q41" />
+        <label for="q41">No</label><br />
+        <input value="3" type="radio" name="worstAddiction" id="q42" />
+        <label for="q42"
+          >Yes, less than 10 percent of my earnings are utilized in EMIs</label
+        ><br />
+        <input value="2" type="radio" name="worstAddiction" id="q43" />
+        <label for="q43"
+          >Yes, 10-20 percent of my earnings are utilized in EMIs</label
+        ><br />
+        <input value="1" type="radio" name="worstAddiction" id="q44" />
+        <label for="q44"
+          >Yes, more than 20 percent of my earnings are utilized in EMIs</label
+        ><br />
+        <!-- <button type="button" class="btn btn-success text-white mt-3 prev">Previous</button> -->
+        <button type="button" class="btn btn-success text-white mt-3 next">
+          Next
+        </button>
+      </div>
+    </div>
+
+    <div id="fifthToast" class="toast mx-auto pt-3 mt-4">
+      <div class="toast-body">
+        <h4>Question 5</h4>
+        <h6>
+          Q) If you are offered a promising job, what compensation structure
+          will you choose?
+        </h6>
+        <input value="4" type="radio" name="cannotComeBack" id="q51" />
+        <label for="q51"
+          >Employee stock options with a current value of Rs 1,00,000</label
+        ><br />
+        <input value="3" type="radio" name="cannotComeBack" id="q52" />
+        <label for="q52">An upfront bonus of Rs 1,00,000</label><br />
+        <input value="2" type="radio" name="cannotComeBack" id="q53" />
+        <label for="q53"
+          >A 10 percent pay increase in your salary of Rs 4,00,000</label
+        ><br />
+        <input value="1" type="radio" name="cannotComeBack" id="q54" />
+        <label for="q54">A 3-year job guarantee</label><br />
+        <!-- <button type="button" class="btn btn-success text-white mt-3 prev">Previous</button> -->
+        <button
+          type="button"
+          class="btn btn-success text-white mt-3 next"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p id="finalDetail"></p>
+            <br />
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              id="closeModal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let p = document.querySelector("#finalDetail");
+        const toasts = [
+          document.querySelector("#firstToast"),
+          document.querySelector("#secondToast"),
+          document.querySelector("#thirdToast"),
+          document.querySelector("#fourthToast"),
+          document.querySelector("#fifthToast"),
+        ];
+        const nextBtns = document.querySelectorAll(".next");
+        let marks = 0;
+      
+        nextBtns.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            const currentToast = toasts[index];
+            const selectedRadio = currentToast.querySelector('input[type="radio"]:checked');
+      
+            if (!selectedRadio) {
+              alert("Please select an answer before proceeding.");
+              return; // Stop the function if no answer is selected
+            }
+      
+            // Add marks based on selected value
+            marks += parseInt(selectedRadio.value);
+      
+            if (index < toasts.length - 1) {
+              currentToast.classList.remove("show");
+              toasts[index + 1].classList.add("show");
+            } else if (index === toasts.length - 1) {
+              let result = "";
+              if (marks <= 20) {
+                result = `<br><b>Category</b>: Conservative<br><b>Equity Large-Cap</b>: 25<br><b>Equity Mid-Cap and Multi-Cap</b>: 60<br><b>Fixed Deposit</b>: 10<br><b>Gold</b>: 5`;
+              } else if (marks <= 15) {
+                result = `<br><b>Category</b>: Conservative<br><b>Equity Large-Cap</b>: 30<br><b>Equity Mid-Cap and Multi-Cap</b>: 60<br><b>Fixed Deposit</b>: 10<br><b>Gold</b>: 10`;
+              } else if (marks <= 10) {
+                result = `<br><b>Category</b>: Conservative<br><b>Equity Large-Cap</b>: 40<br><b>Equity Mid-Cap and Multi-Cap</b>: 20<br><b>Fixed Deposit</b>: 20<br><b>Gold</b>: 20`;
+              } else {
+                result = `<br><b>Category</b>: Conservative<br><b>Equity Large-Cap</b>: 20<br><b>Equity Mid-Cap and Multi-Cap</b>: 0<br><b>Fixed Deposit</b>: 70<br><b>Gold</b>: 10`;
+              }
+              p.innerHTML = `You scored ${marks} out of 20. ${result}`;
+            }
+          });
+        });
+      
+        document.getElementById("closeModal").addEventListener("click", () => {
+          // Reset all radio buttons
+          document.querySelectorAll('input[type="radio"]:checked').forEach((radio) => {
+            radio.checked = false;
+          });
+          // Reset marks
+          marks = 0;
+          // Clear the final detail message
+          p.innerHTML = "";
+          // Show the first toast again
+          toasts.forEach((toast) => toast.classList.remove("show"));
+          toasts[0].classList.add("show");
+        });
+      </script>
+      
+  </body>
+</html>
